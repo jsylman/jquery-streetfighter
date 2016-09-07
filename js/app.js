@@ -42,7 +42,8 @@ $(document).ready(function(){
 });
 
 function playHadouken(){
-	$('#hadouken-sound')[0].volume = .5;
-	$('#hadouken-sound')[0].load();
-	$('#hadouken-sound')[0].play();	
+	var sound = $('#hadouken-sound')[0];
+	sound.volume = .5;
+	sound.load();
+	sound.play();	
 }
